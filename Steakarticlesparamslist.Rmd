@@ -5,7 +5,12 @@ author: "Raja Muthuraman"
 date: "29 March 2019"
 output: html_document
 params:
-  region: "Pacific"
+  region:
+    label: "Region:"
+    value: Mountain
+    input: select
+    choices: ["East North Central", "South Atlantic","New England"       
+      ,"Middle Atlantic","West South Central", "West North Central", "Pacific"                ,"Mountain","East South Central"]
 ---
 
 ```{r setup, include=FALSE}
